@@ -1,16 +1,20 @@
 # Greenguard
 
 Requirement
+
 The existing setup environment in plant nurseries poses several challenges, including wasted resources, increased maintenance efforts, and potential damage to plants. Additionally, individuals who are away from home or reside in old-age homes struggle to maintain greenery due to a lack of time and difficulties in plant care management.
 In order to address these problems, a solution is needed that allows plants to thrive in old-age homes and survive when individuals are away, also addresses the issues faced by business owners in plant nurseries.  The solution should save time and energy, provide a great alternative to conventional watering systems, and prevent overwatering that damages both plants and the surrounding environment.
 
 Features
+
 This code helps in identifying the plant pots in the given image and also give us the position of where exactly it is on a scale of -10 to +10.
 
 Future Prospects
+
 This is just a prototype that identifies the plants in the image. In the future we plan to identify the plant in live captured video and send signal to the watering system .
 
 How we built it
+
 Step 1- Import the neccesary libraries
 Libraries include-
 Numpy
