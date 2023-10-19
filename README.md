@@ -5,25 +5,34 @@ Welcome to the Agricultural Plant Watering Robot repository! This project aims t
 # Overview
 ## The robot's operation can be divided into several key steps:
 
-Initial Dry Run: The robot acquaints itself with its surroundings, mapping obstacles and the locations of potted plants.
+## Initial Dry Run:
+The robot acquaints itself with its surroundings, mapping obstacles and the locations of potted plants.
 
-User Control: Users can maneuver the robot using an accompanying app and direct it to specific areas of operation.
+## User Control:
+Users can maneuver the robot using an accompanying app and direct it to specific areas of operation.
 
-Mapping: The robot gracefully navigates within its designated map, tending to the watering needs of the potted plants.
+## Mapping:
+The robot gracefully navigates within its designated map, tending to the watering needs of the potted plants.
 
-Plant Detection: Using image processing techniques, the robot detects potted plants and approaches them.
+## Plant Detection:
+Using image processing techniques, the robot detects potted plants and approaches them.
 
-Soil Moisture Measurement: The robot's arm probes the soil moisture of each plant, ensuring precise measurement.
+## Soil Moisture Measurement:
+The robot's arm probes the soil moisture of each plant, ensuring precise measurement.
 
-Automated Watering: Based on the moisture reading, the plant receives tailored watering.
+## Automated Watering:
+Based on the moisture reading, the plant receives tailored watering.
 
-Navigation and Obstacle Avoidance: Sophisticated SLAM techniques are employed to elegantly circumvent obstacles.
+## Navigation and Obstacle Avoidance:
+Sophisticated SLAM techniques are employed to elegantly circumvent obstacles.
 
-Water and Battery Management: The robot returns home to replenish its water supply and recharge its battery as needed.
+## Water and Battery Management:
+The robot returns home to replenish its water supply and recharge its battery as needed.
 
-User Interaction: Users can mark new potted plants, define restricted regions, and set default exceptions.
+## User Interaction:
+Users can mark new potted plants, define restricted regions, and set default exceptions.
 
-ROS Nodes
+# ROS Nodes
 The robot's control system is composed of various ROS nodes:
 
 Image Processing Node: Captures real-time data from the Raspberry Pi camera and processes it to locate plant pots. Data is communicated via the dir_values topic.
