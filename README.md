@@ -2,8 +2,8 @@
 
 Welcome to the Agricultural Plant Watering Robot repository! This project aims to create a mobile robot capable of autonomously watering potted plants in an agricultural setting. The robot utilizes a comprehensive and integrated ROS-based framework, addressing key aspects of perception, control, actuation, and safety, while also considering user interaction and feedback mechanisms.
 
-Overview
-The robot's operation can be divided into several key steps:
+# Overview
+## The robot's operation can be divided into several key steps:
 
 Initial Dry Run: The robot acquaints itself with its surroundings, mapping obstacles and the locations of potted plants.
 
