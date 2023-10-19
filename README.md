@@ -1,36 +1,55 @@
-# Greenguard
+Agricultural Plant Watering Robot
+Welcome to the Agricultural Plant Watering Robot repository! This project aims to create a mobile robot capable of autonomously watering potted plants in an agricultural setting. The robot utilizes a comprehensive and integrated ROS-based framework, addressing key aspects of perception, control, actuation, and safety, while also considering user interaction and feedback mechanisms.
 
-## Requirement
+Overview
+The robot's operation can be divided into several key steps:
 
-The existing setup environment in plant nurseries poses several challenges, including wasted resources, increased maintenance efforts, and potential damage to plants. Additionally, individuals who are away from home or reside in old-age homes struggle to maintain greenery due to a lack of time and difficulties in plant care management.
-In order to address these problems, a solution is needed that allows plants to thrive in old-age homes and survive when individuals are away, also addresses the issues faced by business owners in plant nurseries.  The solution should save time and energy, provide a great alternative to conventional watering systems, and prevent overwatering that damages both plants and the surrounding environment.
+Initial Dry Run: The robot acquaints itself with its surroundings, mapping obstacles and the locations of potted plants.
 
-## Features
+User Control: Users can maneuver the robot using an accompanying app and direct it to specific areas of operation.
 
-This code helps in identifying the plant pots in the given image and also give us the position of where exactly it is on a scale of -10 to +10.
+Mapping: The robot gracefully navigates within its designated map, tending to the watering needs of the potted plants.
 
-## Future Prospects
+Plant Detection: Using image processing techniques, the robot detects potted plants and approaches them.
 
-This is just a prototype that identifies the plants in the image. In the future we plan to identify the plant in live captured video and send signal to the watering system .
+Soil Moisture Measurement: The robot's arm probes the soil moisture of each plant, ensuring precise measurement.
 
-## How we built it
+Automated Watering: Based on the moisture reading, the plant receives tailored watering.
 
-#### Step 1- Import the neccesary libraries
-* Libraries include-
-* Numpy
-* Matplotlib
-* cv2
+Navigation and Obstacle Avoidance: Sophisticated SLAM techniques are employed to elegantly circumvent obstacles.
 
-#### Step 2- Gather the training data
-Training data was gathered from google images and some were captured from the surroundings.
+Water and Battery Management: The robot returns home to replenish its water supply and recharge its battery as needed.
 
-#### Step 3- Preprocess the data
-* Reading the images with tensorflow utils as a array of 256,256 pixels
-* Scaling the data by dividing it by 255
-* Creating the custom weights and configuration files
+User Interaction: Users can mark new potted plants, define restricted regions, and set default exceptions.
 
-#### Step 4- Creating the Model
-* We read the image we need to find the plant from.
-* Deep neural network(dnn) is used to identify the objects in the image
-* If the identified object is plant pot, it draws the bounding box with the labels and prints the image.
-The position of the plant pot on the x axis is given on the scale of -10 to +10 (from left to right)
+ROS Nodes
+The robot's control system is composed of various ROS nodes:
+
+Image Processing Node: Captures real-time data from the Raspberry Pi camera and processes it to locate plant pots. Data is communicated via the dir_values topic.
+
+PID Calculation Node: Computes PID control values for precise robot navigation based on plant pot position.
+
+PWM Publisher Node: Bridges high-level navigation commands with low-level motor control actions for the robot's wheels.
+
+Active Collision Node: Analyzes LiDAR scan data to detect obstacles and communicates this information via the obs_detected topic.
+
+Interrupt Manager Node: Handles concurrent processes and prioritizes them based on real-time data from various sources.
+
+Arm Controller Node: Controls the robot's arm, including stepper motors, limit switches, and moisture sensors for safety and accuracy.
+
+Pump Node: Regulates the plant watering process based on real-time moisture data and water levels.
+
+Moisture Sensor Node: Monitors soil moisture levels and publishes data to the moisture_level topic.
+
+Load Cell Node: Manages the measurement of water levels in the robot's reservoir, publishing data to the water_level topic.
+
+LED Controller Node: Provides system condition feedback through LED indicators.
+
+Battery Node: Monitors the robot's power status and communicates battery information via LED indicators.
+
+Getting Started
+To use this repository and deploy the robot, follow the instructions in the respective folders of each ROS node. Ensure you have ROS noetic installed and configured on your system.
+
+
+Acknowledgments
+We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support
