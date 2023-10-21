@@ -31,4 +31,14 @@ The script can be configured using the following parameters:
 ```bash
 rosrun <package_name> interrupt.py
 
-# hey
+
+## Node Information
+Node Name: pot_runner
+Subscribers:
+pot_pos (topic for pot position)
+depth (topic for depth sensor)
+Publishers:
+cmd_vel (topic for velocity commands)
+
+## Acknowledgments
+This script uses a PID controller to control the robot's movement. Credit to the creators of the PID control algorithm.
