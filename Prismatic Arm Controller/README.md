@@ -24,10 +24,10 @@ rosrun <package_name> arm_controller.py
 `/depth:` Provides depth sensor readings.  
 `/moisture_level:` Provides moisture level data.  
 
-The script uses the depth sensor data to determine if the water level is below a certain threshold. Based on the depth reading, it controls the arm's movement as follows:  
+1. The script uses the depth sensor data to determine if the water level is below a certain threshold. Based on the depth reading, it controls the arm's movement as follows:  
 
-If the depth is less than 5 (indicating low water level):  
-If the depth sensor detects water and the arm control signal is high, the arm movement is stopped.  
-If the depth sensor detects water and the flag is set to False, the arm moves in one direction (e.g., to dispense water).  
-If the depth sensor detects water and the flag is set to True, the arm moves in the opposite direction (e.g., to retract).  
-The script also monitors the moisture level data. If the moisture level is greater than 20, it briefly retracts the arm mechanism for a specified time (2 seconds). This helps avoid overwatering plants.
+2. If the depth is less than 5 (indicating low water level):  
+  - If the depth sensor detects water and the arm control signal is high, the arm movement is stopped.  
+  - If the depth sensor detects water and the flag is set to False, the arm moves in one direction (e.g., to dispense water).  
+  - If the depth sensor detects water and the flag is set to True, the arm moves in the opposite direction (e.g., to retract).  
+3. The script also monitors the moisture level data. If the moisture level is greater than 20, it briefly retracts the arm mechanism for a specified time (2 seconds). This helps avoid overwatering plants.
