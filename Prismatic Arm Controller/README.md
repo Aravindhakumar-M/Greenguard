@@ -31,3 +31,6 @@ rosrun <package_name> arm_controller.py
    - If the depth sensor detects water and the flag is set to False, the arm moves in one direction (e.g., to dispense water).
    - If the depth sensor detects water and the flag is set to True, the arm moves in the opposite direction (e.g., to retract).  
 3. The script also monitors the moisture level data. If the moisture level is greater than 20, it briefly retracts the arm mechanism for a specified time (2 seconds). This helps avoid overwatering plants.
+
+## Acknowledgments
+Credit to the creators of ROS and the RPi.GPIO library.
