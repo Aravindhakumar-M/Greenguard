@@ -43,9 +43,10 @@ You can observe the LED status based on the water level data.
 
 ## Node Information
 
-Node Name: led_control_node
+Node Name: 
+`led_control_node`
 Subscribers:
-water_level (topic for water level data)
+`water_level` (topic for water level data)
 
 ## Acknowledgments
 This script uses ROS and Raspberry Pi GPIO to control LEDs based on water level data. Credit to the creators of ROS and the RPi.GPIO library.
