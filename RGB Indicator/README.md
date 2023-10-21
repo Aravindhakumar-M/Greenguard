@@ -22,10 +22,8 @@ Before using this script, ensure that you have the following installed and set u
 
 ## Usage
 
-1. Start a ROS environment on your Raspberry Pi.
-
-2. Run the Python script by executing the following command:
-
+1. Run the ROS master: `roscore`.
+2. Run the `pump_cont` script using the `rosrun` command, assuming you have the necessary permissions:
 ```bash
 rosrun <package_name> <script_name>.py
 ```
