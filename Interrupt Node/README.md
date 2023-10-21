@@ -30,7 +30,10 @@ The script can be configured using the following parameters:
 
 ```bash
 rosrun <package_name> interrupt.py
+```
+The script will subscribe to sensor data (pot position from the open cv node and depth from the obstacle avoidance node) and control the robot's movement based on the PID controller and sensor readings.
 
+The robot's behavior may include stopping, turning, or moving forward based on the detected "pot position."
 
 ## Node Information
 Node Name: pot_runner
