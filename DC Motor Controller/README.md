@@ -41,12 +41,13 @@ rosrun <package_name> Motor_Controller.py
 4. Motor commands should be published on the corresponding ROS topics, and the script will convert them into PWM signals.
 
 ## Node Information
-Node Name: velocity_to_pwm  
+Node Name:  
+velocity_to_pwm  
 
-Subscribers:
-`/Revolute1_velocity_controller/command (for Motor 1)`
-`/Revolute2_velocity_controller/command (for Motor 2)`
-`/Revolute3_velocity_controller/command (for Motor 3)`
+Subscribers:  
+`/Revolute1_velocity_controller/command (for Motor 1)`  
+`/Revolute2_velocity_controller/command (for Motor 2)`  
+`/Revolute3_velocity_controller/command (for Motor 3)`  
 `/Revolute4_velocity_controller/command (for Motor 4)`
 
 ## Acknowledgments
