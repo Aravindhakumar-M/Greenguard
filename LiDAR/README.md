@@ -32,4 +32,4 @@ Subscribers:
 `/scan (for LaserScan data)`
 
 ## Acknowledgments
-This script is a basic example of obstacle avoidance in a ROS environment using LaserScan data. Credit to the creators of ROS for providing the tools and libraries for robotics development.
+This script is a basic example of obstacle avoidance in a ROS environment using LaserScan data. Credit to the creators of ROS for providing the tools and libraries for robotics development. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
