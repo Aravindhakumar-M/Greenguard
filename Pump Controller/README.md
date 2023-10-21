@@ -31,3 +31,6 @@ Before running the script, ensure that you have the following:
    - If moisture is between 20 and 39, the outlet pump turns on for 6 seconds.
    - If moisture is below 20, the outlet pump turns on for 8 seconds.
 4. The script includes error handling and cleanup procedures.
+
+## Acknowledgments
+Credit to the creators of ROS for providing the tools and libraries for robotics development.
