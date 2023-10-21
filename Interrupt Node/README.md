@@ -1,0 +1,32 @@
+# Robot Control with PID Positioning
+
+This project is a Python script that controls a robot's movement using a PID (Proportional-Integral-Derivative) controller. The script subscribes to messages from sensors, adjusts the robot's behavior based on those inputs, and publishes velocity commands to control the robot's movement.
+
+## Prerequisites
+
+Before using this script, ensure that you have the following installed:
+
+- Python
+- ROS (Robot Operating System)
+- `rospy` - ROS Python library
+- `std_msgs` - ROS standard messages library
+- `geometry_msgs` - ROS geometry messages library
+
+## Configuration
+
+The script can be configured using the following parameters:
+
+- `Kp`, `Ki`, and `Kd`: PID control constants
+- `SetPoint`: The target value for the PID controller
+- `windup_guard`: A limit to prevent integral windup
+- `initial_vel`: The initial velocity of the robot
+- Other parameters for specific sensor inputs and control logic
+
+## Usage
+
+1. Start a ROS environment.
+
+2. Run the Python script by executing the following command:
+
+```bash
+rosrun <package_name> interrupt.py
