@@ -28,7 +28,7 @@ The script requires configuring the GPIO pins and may need adjustments based on 
 ## Usage
 
 1. Run the ROS master: `roscore`.
-2. Run the `pump_cont` script using the `rosrun` command, assuming you have the necessary permissions:
+2. Run the script using the `rosrun` command, assuming you have the necessary permissions:
 ```bash
 rosrun <package_name> water_level.py
 ```
