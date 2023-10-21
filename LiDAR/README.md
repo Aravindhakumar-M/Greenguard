@@ -30,7 +30,8 @@ Node Name:
 Publishers:  
 `/cmd_vel (for robot velocity control)`  
 
-Subscribers:  
+Subscribers:     
+
 `/scan (for LaserScan data)`
 
 ## Acknowledgments
