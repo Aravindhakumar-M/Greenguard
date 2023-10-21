@@ -18,7 +18,7 @@ Before running the script, ensure that you have the following:
 ## Usage
 
 1. Run the ROS master: `roscore`.
-2. Run the `pump_cont` script using the `rosrun` command, assuming you have the necessary permissions:
+2. Run the script using the `rosrun` command, assuming you have the necessary permissions:
    ```bash
    rosrun <package_name> pump_controller.py
    ```
