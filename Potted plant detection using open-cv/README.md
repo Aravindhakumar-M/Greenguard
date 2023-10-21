@@ -45,4 +45,4 @@ Detected object information, including class and confidence score.
 Annotated image with bounding boxes and labels.
 
 ##  Acknowledgments
-This script demonstrates object detection using the YOLOv3 Tiny model with OpenCV. Credit to the creators of YOLO (You Only Look Once) for the model architecture and the OpenCV community.
+This script demonstrates object detection using the YOLOv3 Tiny model with OpenCV. Credit to the creators of YOLO (You Only Look Once) for the model architecture and the OpenCV community. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
