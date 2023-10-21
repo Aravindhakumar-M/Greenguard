@@ -36,12 +36,15 @@ The script will subscribe to sensor data (pot position from the open cv node and
 The robot's behavior may include stopping, turning, or moving forward based on the detected "pot position."
 
 ## Node Information
-Node Name: pot_runner
-Subscribers:
-pot_pos (topic for pot position)
-depth (topic for depth sensor)
-Publishers:
-cmd_vel (topic for velocity commands)
+Node Name:  
+pot_runner  
+
+Subscribers:  
+`pot_pos (topic for pot position)`  
+`depth (topic for depth sensor)`  
+
+Publishers:  
+`cmd_vel (topic for velocity commands)`
 
 ## Acknowledgments
 This script uses a PID controller to control the robot's movement. Credit to the creators of the PID control algorithm.
