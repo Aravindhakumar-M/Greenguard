@@ -7,7 +7,7 @@ import time
 
 class Pid_positioning:
     def __init__(self, current_time=None):
-        # PID control constants
+        # PID control constants, tune it according to your requirements
         self.Kp = 1.0
         self.Ki = 0.0
         self.Kd = 0.0
