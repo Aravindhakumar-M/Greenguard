@@ -14,9 +14,10 @@ This Python script is designed for a Raspberry Pi to interface with an ultrasoni
 
 2. Make sure you have ROS installed and set up on your Raspberry Pi.
 
-3. Copy the provided Python script to your Raspberry Pi.
-
-4. Run the script using the following command:
+3. Run the script using the `rosrun` command, assuming you have the necessary permissions:
+```bash
+rosrun <package_name> water_level.py
+```
 
 
 ## Operation
