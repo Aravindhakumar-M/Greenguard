@@ -45,4 +45,4 @@ Publishers:
 `cmd_vel (topic for velocity commands)`
 
 ## Acknowledgments
-This script uses a PID controller to control the robot's movement. Credit to the creators of the PID control algorithm.
+This script uses a PID controller to control the robot's movement. Credit to the creators of the PID control algorithm. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
