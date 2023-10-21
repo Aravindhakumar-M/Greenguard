@@ -40,4 +40,4 @@ Publisher:
 `/moisture_level (for moisture level data)`
 
 ## Acknowledgments
-This script demonstrates moisture level sensing using a serial-connected sensor and Raspberry Pi in a ROS environment. Credit to the creators of ROS and the Raspberry Pi ecosystem.
+This script demonstrates moisture level sensing using a serial-connected sensor and Raspberry Pi in a ROS environment. Credit to the creators of ROS and the Raspberry Pi ecosystem. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
