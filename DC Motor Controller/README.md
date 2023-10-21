@@ -27,9 +27,8 @@ Adjust the following configuration parameters in the script as per your hardware
 
 ## Usage
 
-1. Start a ROS environment on your Raspberry Pi.
-
-2. Run the Python script using the following command:
+1. Run the ROS master: `roscore`.
+2. Run the script using the `rosrun` command, assuming you have the necessary permissions:
 
 ```bash
 rosrun <package_name> Motor_Controller.py
