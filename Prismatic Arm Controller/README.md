@@ -13,8 +13,8 @@ Before running the code, make sure you have the following:
 
 ## Usage
 
-1. Run the ROS node by executing the following command:
-
+1. Run the ROS master: `roscore`.
+2. Run the script using the `rosrun` command, assuming you have the necessary permissions:
 ```bash
 rosrun <package_name> arm_controller.py
 ```
