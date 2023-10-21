@@ -33,4 +33,4 @@ rosrun <package_name> arm_controller.py
 3. The script also monitors the moisture level data. If the moisture level is greater than 20, it briefly retracts the arm mechanism for a specified time (2 seconds). This helps avoid overwatering plants.
 
 ## Acknowledgments
-Credit to the creators of ROS and the RPi.GPIO library.
+Credit to the creators of ROS and the RPi.GPIO library. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
