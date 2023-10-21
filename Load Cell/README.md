@@ -46,4 +46,4 @@ Publisher:
 `/water_level (for water level data)`
 
 ## Acknowledgments
-This script demonstrates water level monitoring using a weight sensor and Raspberry Pi GPIO pins in a ROS environment. Credit to the creators of ROS and the RPi.GPIO library.
+This script demonstrates water level monitoring using a weight sensor and Raspberry Pi GPIO pins in a ROS environment. Credit to the creators of ROS and the RPi.GPIO library. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
