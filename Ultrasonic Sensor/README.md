@@ -16,7 +16,7 @@ This Python script is designed for a Raspberry Pi to interface with an ultrasoni
 
 3. Run the script using the `rosrun` command, assuming you have the necessary permissions:
 ```bash
-rosrun <package_name> water_level.py
+rosrun <package_name> depth.py
 ```
 
 
