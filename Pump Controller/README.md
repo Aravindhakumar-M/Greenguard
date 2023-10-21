@@ -22,3 +22,12 @@ Before running the script, ensure that you have the following:
    ```bash
    rosrun <package_name> pump_controller.py
    ```
+
+1. The script subscribes to the `/moisture_level` and `/water_level` topics, which should provide sensor data.
+2. The inlet pump will turn on when the water level is below 300, and it will turn off when the level is above or equal to 300.
+3. The outlet pump operates based on the moisture level as follows:
+   - If moisture is greater than or equal to 60, the outlet pump turns off.
+   - If moisture is between 40 and 59, the outlet pump turns on for 4 seconds.
+   - If moisture is between 20 and 39, the outlet pump turns on for 6 seconds.
+   - If moisture is below 20, the outlet pump turns on for 8 seconds.
+4. The script includes error handling and cleanup procedures.
