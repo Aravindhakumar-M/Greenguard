@@ -44,7 +44,8 @@ You can observe the LED status based on the water level data.
 ## Node Information
 
 Node Name: 
-`led_control_node`
+`led_control_node`  
+
 Subscribers:
 `water_level` (topic for water level data)
 
