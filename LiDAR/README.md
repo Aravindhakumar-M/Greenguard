@@ -31,7 +31,6 @@ Publishers:
 `/cmd_vel (for robot velocity control)`  
 
 Subscribers:     
-
 `/scan (for LaserScan data)`
 
 ## Acknowledgments
