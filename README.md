@@ -72,4 +72,4 @@ To use this repository and deploy the robot, follow the instructions in the resp
 - [RPi.GPIO library](https://pypi.org/project/RPi.GPIO/) (Install it if not installed by default)
 
 # Acknowledgments
-We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support
+Credit to the creators of ROS and the RPi.GPIO library. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support
