@@ -5,43 +5,52 @@ from std_msgs.msg import Int16
 import RPi.GPIO as GPIO
 import time
 
-flag = False  # Flag to control arm movement
-moisture = 0  # Moisture level
-
+flag = False
+moisture = 0
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(17, GPIO.OUT)  # Control pin for one arm movement direction
-GPIO.setup(22, GPIO.OUT)  # Control pin for the other arm movement direction
-GPIO.setup(23, GPIO.OUT)  # Arm control signal
-GPIO.setup(21, GPIO.IN)   # Input pin for depth sensor
 
-GPIO.output(23, True)     # Enable the arm control signal
-GPIO.output(17, False)    # Set one arm direction to low
-GPIO.output(22, True)     # Set the other arm direction to high
+# Control pin for one arm movement direction
+GPIO.setup(17, GPIO.OUT)
+# Control pin for the other arm movement direction
+GPIO.setup(22, GPIO.OUT)
+# Arm control signal
+GPIO.setup(23, GPIO.OUT)
+# Input pin for the limit switch
+GPIO.setup(21, GPIO.IN)
+
+# Enable the arm control signal
+GPIO.output(23, True)
+
+# Set one arm direction to low
+GPIO.output(17, False)
+
+# Set the other arm direction to high
+GPIO.output(22, True)
 
 # Callback function to handle moisture level data
 def func_moisture(moist):
     global moisture
     moisture = moist.data
 
-# Callback function to control the arm based on depth sensor data
+# Callback function to control the arm based on depth sensor data (limit switch)
 def func_depth(data):
     global flag
 
-    # Check if the depth reading is less than 5 (considering it as a water depth threshold)
+    # Check if the depth reading is less than 5 (considering it as infront of a potted plant)
     if data.data < 5:
 
-        # If the depth sensor detects water and arm control signal is high
+        # If the depth sensor detects obstacle and the limit switch is active (arm control signal is high)
         if GPIO.input(21) == 1:
             GPIO.output(17, False)  # Turn off one arm direction
             GPIO.output(22, False)  # Turn off the other arm direction
             flag = True  # Set the flag to True
 
-        # If the depth sensor detects water and flag is False
+        # If the depth sensor detects obstacle and the flag is False (limit switch not active)
         elif flag == False:
             GPIO.output(17, False)  # Turn off one arm direction
             GPIO.output(22, True)   # Set the other arm direction to high
 
-        # If the depth sensor detects water and flag is True
+        # If the depth sensor detects obstacle and the flag is True (limit switch active)
         elif flag == True:
             GPIO.output(17, True)    # Set one arm direction to high
             GPIO.output(22, False)   # Turn off the other arm direction
@@ -56,7 +65,6 @@ def func_depth(data):
                 GPIO.output(17, False)
                 GPIO.output(22, True)
 
-# Callback function to handle shutdown
 def shutdown():
     GPIO.cleanup()  # Cleanup GPIO pins
 
