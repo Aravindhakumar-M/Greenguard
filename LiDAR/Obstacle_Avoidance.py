@@ -8,9 +8,9 @@ twist_msg = Twist()
 def scan_callback(msg):
     ranges = msg.ranges
 
-    # Check if there is any obstacle within 30 cm
+    # Check if there is any obstacle within 20 cm
     for i in range(len(ranges)):
-        if ranges[i] < 0.3:
+        if ranges[i] < 0.2:
             twist_msg.linear.x = 0.0
             twist_msg.angular.z = 0.0
             cmd_vel_pub.publish(twist_msg())
@@ -22,4 +22,3 @@ if __name__ == '__main__':
     scan_sub = rospy.Subscriber('/scan', LaserScan, scan_callback)
 
     rospy.spin()
-
