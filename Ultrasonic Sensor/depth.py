@@ -9,7 +9,6 @@ TRIG_PIN = 23  # Trigger pin
 ECHO_PIN = 24  # Echo pin
 
 def ultrasonic_sensor_callback(publisher):
-    # Set up the GPIO pins for the ultrasonic sensor
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(TRIG_PIN, GPIO.OUT)
     GPIO.setup(ECHO_PIN, GPIO.IN)
