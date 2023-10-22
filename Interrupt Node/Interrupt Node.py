@@ -101,7 +101,7 @@ if __name__ == '__main__':
         # Initialize the ROS node
         rospy.init_node('pot_runner', anonymous=True)
         print("Started Pot Runner Node")
-        # Create a publisher for velocity commands
+        # Create a publisher for velocity commands of type Twist
         pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
         positioning = Pid_positioning()
         positioning.publisher()
