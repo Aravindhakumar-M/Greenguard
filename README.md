@@ -33,33 +33,40 @@ The robot returns home to replenish its water supply and recharge its battery as
 Users can mark new potted plants, define restricted regions, and set default exceptions.
 
 # ROS Nodes
-The robot's control system is composed of various ROS nodes:
+## The robot's control system is composed of various ROS nodes:
 
-Image Processing Node: Captures real-time data from the Raspberry Pi camera and processes it to locate plant pots. Data is communicated via the dir_values topic.
+## Image Processing Node:
+Captures real-time data from the Raspberry Pi camera and processes it to locate plant pots. Data is communicated via the dir_values topic.
 
-PID Calculation Node: Computes PID control values for precise robot navigation based on plant pot position.
+## PID Calculation Node: 
+Computes PID control values for precise robot navigation based on plant pot position.
 
-PWM Publisher Node: Bridges high-level navigation commands with low-level motor control actions for the robot's wheels.
+## PWM Publisher Node: 
+Bridges high-level navigation commands with low-level motor control actions for the robot's wheels.
 
-Active Collision Node: Analyzes LiDAR scan data to detect obstacles and communicates this information via the obs_detected topic.
+## Active Collision Node: 
+Analyzes LiDAR scan data to detect obstacles and communicates this information via the obs_detected topic.
 
-Interrupt Manager Node: Handles concurrent processes and prioritizes them based on real-time data from various sources.
+## Interrupt Manager Node: 
+Handles concurrent processes and prioritizes them based on real-time data from various sources.
 
-Arm Controller Node: Controls the robot's arm, including stepper motors, limit switches, and moisture sensors for safety and accuracy.
+## Arm Controller Node: 
+Controls the robot's arm, including stepper motors, limit switches, and moisture sensors for safety and accuracy.
 
-Pump Node: Regulates the plant watering process based on real-time moisture data and water levels.
+## Pump Node: 
+Regulates the plant watering process based on real-time moisture data and water levels.
 
-Moisture Sensor Node: Monitors soil moisture levels and publishes data to the moisture_level topic.
+## Moisture Sensor Node: 
+Monitors soil moisture levels and publishes data to the moisture_level topic.
 
-Load Cell Node: Manages the measurement of water levels in the robot's reservoir, publishing data to the water_level topic.
+## Load Cell Node: 
+Manages the measurement of water levels in the robot's reservoir, publishing data to the water_level topic.
 
-LED Controller Node: Provides system condition feedback through LED indicators.
+## LED Controller Node: 
+Provides system condition feedback through LED indicators.
 
-Battery Node: Monitors the robot's power status and communicates battery information via LED indicators.
-
-Getting Started
+# Getting Started
 To use this repository and deploy the robot, follow the instructions in the respective folders of each ROS node. Ensure you have ROS noetic installed and configured on your system.
 
-
-Acknowledgments
+# Acknowledgments
 We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support
