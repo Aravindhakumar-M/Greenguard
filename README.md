@@ -66,7 +66,10 @@ Manages the measurement of water levels in the robot's reservoir, publishing dat
 Provides system condition feedback through LED indicators.
 
 # Getting Started
-To use this repository and deploy the robot, follow the instructions in the respective folders of each ROS node. Ensure you have ROS noetic installed and configured on your system.
+To use this repository and deploy the robot, follow the instructions in the respective folders of each ROS node. Ensure you have ROS noetic installed and configured on your system. Make sure that you have
+- Ubuntu 20 installed and configured on the Raspberry Pi
+- ROS (Robot Operating System) installed on the Raspberry Pi
+- [RPi.GPIO library](https://pypi.org/project/RPi.GPIO/) (Install it if not installed by default)
 
 # Acknowledgments
 We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support
