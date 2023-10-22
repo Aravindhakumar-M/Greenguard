@@ -1,6 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-# Import necessary libraries
 import rospy
 from std_msgs.msg import Int16
 import RPi.GPIO as gpio
