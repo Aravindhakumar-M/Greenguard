@@ -4,7 +4,6 @@ import rospy
 import RPi.GPIO as GPIO
 from std_msgs.msg import Int16
 
-# Define the GPIO pins for the LEDs
 LED1_PIN = 17
 LED2_PIN = 18
 LED3_PIN = 19
