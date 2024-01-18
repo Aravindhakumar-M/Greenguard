@@ -50,4 +50,4 @@ Subscribers:
 `/Revolute4_velocity_controller/command (for Motor 4)`
 
 ## Acknowledgments
-This script uses ROS and RPi.GPIO for controlling motors with PWM signals. Credit to the creators of ROS and RPi.GPIO library. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
+This script uses ROS and RPi.GPIO for controlling motors with PWM signals. Credit to the creators of ROS and RPi.GPIO library. Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
