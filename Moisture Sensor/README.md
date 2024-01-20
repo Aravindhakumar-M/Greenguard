@@ -7,9 +7,8 @@ This Python script is designed to read moisture level data from a sensor connect
 Before using this script, ensure you have the following:
 
 - Python 3
-- ROS (Robot Operating System) installed and configured
+- ROS Noetic
 - A moisture sensor connected to a serial port (e.g., `/dev/ttyUSB0`)
-- Appropriate sensor drivers and configuration
 
 ## Configuration
 
