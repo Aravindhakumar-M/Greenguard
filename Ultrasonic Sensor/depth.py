@@ -4,7 +4,6 @@ import rospy
 from std_msgs.msg import Int16
 import RPi.GPIO as GPIO
 
-# Define GPIO pins for the ultrasonic sensor
 TRIG_PIN = 23  # Trigger pin
 ECHO_PIN = 24  # Echo pin
 
@@ -37,7 +36,7 @@ def ultrasonic_sensor_callback(publisher):
 def ultrasonic_sensor_node():
     rospy.init_node('depth_node', anonymous=True)
     publisher = rospy.Publisher('/depth', Int16, queue_size=10)
-    rate = rospy.Rate(10)  # Set the publishing rate to 10 Hz
+    rate = rospy.Rate(10)
 
     while not rospy.is_shutdown():
         ultrasonic_sensor_callback(publisher)
