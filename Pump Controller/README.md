@@ -33,4 +33,4 @@ Before running the script, ensure that you have the following:
 4. The script includes error handling and cleanup procedures.
 
 ## Acknowledgments
-Credit to the creators of ROS for providing the tools and libraries for robotics development. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
+Credit to the creators of ROS for providing the tools and libraries for robotics development. Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
