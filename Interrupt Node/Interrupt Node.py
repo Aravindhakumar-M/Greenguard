@@ -28,7 +28,7 @@ class Pid_positioning:
         self.depth = 0
         self.flag = 1
         self.depth = 0
-        # Subscribers for pot position and depth
+
         rospy.Subscriber('pot_pos', Int16, self.callback)
         rospy.Subscriber('depth', Int16, self.stop)
 
@@ -98,10 +98,8 @@ class Pid_positioning:
 
 if __name__ == '__main__':
     try:
-        # Initialize the ROS node
         rospy.init_node('pot_runner', anonymous=True)
         print("Started Pot Runner Node")
-        # Create a publisher for velocity commands of type Twist
         pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
         positioning = Pid_positioning()
         positioning.publisher()
