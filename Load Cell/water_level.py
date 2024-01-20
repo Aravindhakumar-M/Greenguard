@@ -9,23 +9,14 @@ import time
 DAT = 13
 CLK = 8
 num = 0
-
-# Set GPIO pin numbering mode to BOARD
 gpio.setmode(gpio.BOARD)
-
-# Set up the clock (CLK) pin as an output
 gpio.setup(CLK, gpio.OUT)
 
-# Function to read weight data from a sensor
 def weight(event):
     i = 0
     num = 0
-
-    # Set data (DAT) pin as an output, and set it to 1
     gpio.setup(DAT, gpio.OUT)
     gpio.output(DAT, 1)
-
-    # Set clock (CLK) pin to 0
     gpio.output(CLK, 0)
 
     # Set data (DAT) pin as an input
@@ -58,7 +49,6 @@ def weight(event):
     # Publish the load value to a ROS topic
     pub.publish(Int16(int(load))
 
-# Function to handle cleanup when the script is terminated
 def shutdown():
     gpio.cleanup()
 
@@ -66,8 +56,6 @@ if __name__ == '__main__':
     try:
         rospy.init_node('water_level_node', anonymous=True)
         print("Started Water Level node")
-
-        # Create a ROS publisher to publish water level data
         pub = rospy.Publisher('/water_level', Int16, queue_size=10)
 
         # Create a timer to trigger the weight function at a regular interval
@@ -77,5 +65,4 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
     finally:
-        # Cleanup GPIO pins when the script terminates
         shutdown()
