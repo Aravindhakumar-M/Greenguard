@@ -8,7 +8,6 @@ LED1_PIN = 17
 LED2_PIN = 18
 LED3_PIN = 19
 
-# Initialize the GPIO configuration
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(LED1_PIN, GPIO.OUT)
 GPIO.setup(LED2_PIN, GPIO.OUT)
@@ -76,5 +75,4 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
     finally:
-        # Cleanup GPIO
         shutdown()
