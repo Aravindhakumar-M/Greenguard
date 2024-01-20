@@ -6,8 +6,8 @@ This Python script is designed to read weight data from a sensor connected to Ra
 
 Before using this script, ensure you have the following:
 
-- Python
-- ROS (Robot Operating System)
+- Python 3
+- ROS Noetic
 - RPi.GPIO (for Raspberry Pi GPIO control)
 
 ## Hardware Setup
