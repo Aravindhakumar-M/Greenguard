@@ -6,8 +6,8 @@ This Python script is designed for obstacle avoidance using LaserScan data in a 
 
 Before using this script, ensure you have the following:
 
-- Python
-- ROS (Robot Operating System)
+- Python 3
+- ROS Noetic
 
 ## Usage
 
