@@ -7,7 +7,7 @@ This Python script controls an arm mechanism based on depth sensor readings and 
 Before running the code, make sure you have the following:
 
 - Raspberry Pi with GPIO pins enabled.
-- ROS installed on your system.
+- ROS noetic installed on your system.
 - Appropriate depth sensor and moisture level sensor connected to your Raspberry Pi.
 - Required ROS packages set up if not already done.
 
