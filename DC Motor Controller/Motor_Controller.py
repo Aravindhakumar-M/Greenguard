@@ -50,12 +50,11 @@ def set_motor_pwm(pin1, pin2, duty_cycle):
 
     # Set the PWM duty cycle on the motor driver GPIO pins
     GPIO.output(pin1, pwm_value)
-    GPIO.output(pin2, 0)  # Set the other pin to 0
+    GPIO.output(pin2, 0)  # Set the other pin to LOW
 
 if __name__ == '__main__':
     rospy.init_node('velocity_to_pwm')
 
-    # Initialize GPIO pins as output
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(MOTOR1_PIN_1, GPIO.OUT)
     GPIO.setup(MOTOR1_PIN_2, GPIO.OUT)
@@ -66,7 +65,6 @@ if __name__ == '__main__':
     GPIO.setup(MOTOR4_PIN_1, GPIO.OUT)
     GPIO.setup(MOTOR4_PIN_2, GPIO.OUT)
 
-    # Create subscribers for the motor commands
     motor1_cmd_sub = rospy.Subscriber('/Revolute1_velocity_controller/command', Float64, motor1_cmd_callback)
     motor2_cmd_sub = rospy.Subscriber('/Revolute2_velocity_controller/command', Float64, motor2_cmd_callback)
     motor3_cmd_sub = rospy.Subscriber('/Revolute3_velocity_controller/command', Float64, motor3_cmd_callback)
