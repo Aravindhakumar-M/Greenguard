@@ -73,4 +73,4 @@ To use this repository and deploy the robot, follow the instructions in the resp
 
 # Acknowledgments
 Credit to the creators of ROS and the RPi.GPIO library.   
-We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
+Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
