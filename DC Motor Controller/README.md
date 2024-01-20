@@ -7,7 +7,7 @@ This Python script is designed to translate velocity commands received via ROS t
 Before using this script, ensure you have the following:
 
 - Python
-- ROS (Robot Operating System)
+- ROS Noetic
 - RPi.GPIO (for Raspberry Pi GPIO control)
 
 ## Hardware Setup
