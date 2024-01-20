@@ -48,4 +48,4 @@ Subscribers:
 `water_level` (topic for water level data)
 
 ## Acknowledgments
-This script uses ROS and Raspberry Pi GPIO to control LEDs based on water level data. Credit to the creators of ROS and the RPi.GPIO library. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
+This script uses ROS and Raspberry Pi GPIO to control LEDs based on water level data. Credit to the creators of ROS and the RPi.GPIO library. Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
