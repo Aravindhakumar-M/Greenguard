@@ -5,7 +5,7 @@ This Python script is designed for a Raspberry Pi to interface with an ultrasoni
 ## Prerequisites
 
 - A Raspberry Pi with GPIO pins
-- ROS (Robot Operating System) installed on the Raspberry Pi
+- ROS Noetic installed on the Raspberry Pi
 - Appropriate wiring for connecting the ultrasonic sensor to the Raspberry Pi's GPIO pins
 
 ## Setup
