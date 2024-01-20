@@ -7,7 +7,7 @@ This project is a Python script that controls a robot's movement using a PID (Pr
 Before using this script, ensure that you have the following installed:
 
 - Python
-- ROS (Robot Operating System)
+- ROS Noetic
 - `rospy` - ROS Python library
 - `std_msgs` - ROS standard messages library
 - `geometry_msgs` - ROS geometry messages library
