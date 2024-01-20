@@ -8,7 +8,7 @@ Before using this script, ensure you have the following:
 
 - Python 3
 - ROS Noetic
-- A moisture sensor connected to a serial port (e.g., `/dev/ttyUSB0`)
+- A moisture sensor connected to a serial port (e.g., `/dev/ttyUSB0`) with an arduino
 
 ## Configuration
 
