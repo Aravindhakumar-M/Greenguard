@@ -5,12 +5,7 @@ from std_msgs.msg import Int16
 import serial
 import time
 
-# Initialize a ROS node
 rospy.init_node('moisture_node', anonymous=True)
-
-print("Started Moisture Sensing node")
-
-# Create a ROS publisher to publish moisture level data
 pub = rospy.Publisher('/moisture_level', Int16, queue_size=10)
 
 # Initialize a serial connection to the moisture sensor on '/dev/ttyUSB0' with a baud rate of 9600 and a timeout of 1 second
