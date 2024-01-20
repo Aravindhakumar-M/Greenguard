@@ -34,4 +34,4 @@ The script operates as follows:
 - The script publishes depth measurements at a rate of 10 Hz.
 
 ## Acknowledgments
-This script demonstrates Active Collision Avoidance using a Ultrasonic sensor and Raspberry Pi GPIO pins in a ROS environment. Credit to the creators of ROS and the RPi.GPIO library. We would like to express our gratitude to Anya Robotics Pvt Ltd for their contributions or support.
+This script demonstrates Active Collision Avoidance using a Ultrasonic sensor and Raspberry Pi GPIO pins in a ROS environment. Credit to the creators of ROS and the RPi.GPIO library. Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
