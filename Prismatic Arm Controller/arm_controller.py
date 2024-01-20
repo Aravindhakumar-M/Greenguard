@@ -23,8 +23,6 @@ GPIO.output(23, True)
 
 # Set one arm direction to low
 GPIO.output(17, False)
-
-# Set the other arm direction to high
 GPIO.output(22, True)
 
 # Callback function to handle moisture level data
@@ -66,15 +64,13 @@ def func_depth(data):
                 GPIO.output(22, True)
 
 def shutdown():
-    GPIO.cleanup()  # Cleanup GPIO pins
+    GPIO.cleanup()
 
-# Main execution
 if __name__ == '__main__':
     try:
         rospy.init_node('arm_cont', anonymous=True)
         print("Started Arm Controller node")
 
-        # Subscribe to depth and moisture level topics
         rospy.Subscriber('/depth', Int16, func_depth)
         rospy.Subscriber('/moisture_level', Int16, func_moisture)
         rospy.spin()
