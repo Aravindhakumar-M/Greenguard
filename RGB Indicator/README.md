@@ -7,7 +7,7 @@ This project is a Python script that controls three LEDs based on water level da
 Before using this script, ensure that you have the following installed and set up:
 
 - Python 3
-- ROS (Robot Operating System)
+- ROS Noetic
 - RPi.GPIO (for Raspberry Pi GPIO control)
 - `rospy` - ROS Python library
 - `std_msgs` - ROS standard messages library
