@@ -7,7 +7,7 @@ This Python script is designed to control water pumps (inlet and outlet) based o
 Before running the script, ensure that you have the following:
 
 - Raspberry Pi set up with RPi.GPIO library.
-- ROS (Robot Operating System) installed if you are using ROS topics for sensor data.
+- ROS Noetic installed.
 
 ## Hardware Setup
 
