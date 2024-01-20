@@ -71,6 +71,4 @@ if __name__ == '__main__':
     motor4_cmd_sub = rospy.Subscriber('/Revolute4_velocity_controller/command', Float64, motor4_cmd_callback)
 
     rospy.spin()
-
-    # Cleanup GPIO pins
     GPIO.cleanup()
