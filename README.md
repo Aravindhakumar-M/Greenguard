@@ -1,6 +1,6 @@
 # Agricultural Plant Watering Robot
 
-Welcome to the Agricultural Plant Watering Robot repository! This project aims to create a mobile robot capable of autonomously watering potted plants in an agricultural setting. The robot utilizes a comprehensive and integrated ROS-based framework, addressing key aspects of perception, control, actuation, and safety, while also considering user interaction and feedback mechanisms.
+This project aims to create a mobile robot capable of autonomously watering potted plants in an agricultural setting. The robot utilizes a comprehensive and integrated ROS-based framework, addressing key aspects of perception, control, actuation, and safety, while also considering user interaction and feedback mechanisms.
 
 # Overview
 ## The robot's operation can be divided into several key steps:
@@ -68,7 +68,7 @@ Provides system condition feedback through LED indicators.
 # Getting Started
 To use this repository and deploy the robot, follow the instructions in the respective folders of each ROS node. Ensure you have ROS noetic installed and configured on your system. Make sure that you have
 - Ubuntu 20 installed and configured on the Raspberry Pi
-- ROS (Robot Operating System) installed on the Raspberry Pi
+- Robot Operating System (ROS Noetic) installed on the Raspberry Pi
 - [RPi.GPIO library](https://pypi.org/project/RPi.GPIO/) (Install it if not installed by default)
 
 # Acknowledgments
